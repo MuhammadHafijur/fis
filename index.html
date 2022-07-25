@@ -5,25 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FIS</title>
-
     <!-- TailwindCss -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              "regal-blue": "#243c5a",
-            },
-          },
-        },
-      };
-    </script>
-
+    <link rel="stylesheet" href="public/style.css">
     <!-- AlpineJs -->
     <script
       defer
-      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+      src="public/script.js"
     ></script>
 
     <!-- Fonts -->
@@ -34,18 +21,26 @@
       rel="stylesheet"
     />
 
+    <!-- Animate.css -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
     <style>
       .poppins {
         font-family: "Poppins", sans-serif;
       }
     </style>
+
   </head>
   <body>
     <section>
       <!-- Header -->
 
       <div
-        class="nc-Header sticky top-0 w-full left-0 right-0 z-40 nc-header-bg shadow-sm dark:border-b dark:border-neutral-700"
+      
+        class="nc-Header animate__animated animate__bounceInDown sticky top-0 w-full left-0 right-0 z-40 nc-header-bg shadow-sm dark:border-b dark:border-neutral-700"
       >
         <div class="nc-MainNav1 nc-MainNav2 relative z-10">
           <div
@@ -154,7 +149,7 @@
                     <div
                       x-show="show"
                       x-on:click.outside="show = false"
-                      class="absolute z-40 w-screen max-w-xs px-4 mt-3 transform -translate-x-1/2 left-1/2 sm:px-0 opacity-100 translate-y-0"
+                      class="absolute animate__animated animate__fadeIn animate__faster z-40 w-screen max-w-xs px-4 mt-3 transform -translate-x-1/2 left-1/2 sm:px-0 opacity-100 translate-y-0"
                       id="headlessui-popover-panel-:rs:"
                       tabindex="-1"
                     >
@@ -477,7 +472,7 @@
                     <div
                       x-show="show"
                       x-on:click.outside="show = false"
-                      class="absolute z-10 w-screen max-w-[140px] px-4 mt-3 right-0 sm:px-0 opacity-100 translate-y-0"
+                      class="animate__animated animate__fadeIn animate__faster absolute z-10 w-screen max-w-[140px] px-4 mt-3 right-0 sm:px-0 opacity-100 translate-y-0"
                       id="headlessui-popover-panel-:rv:"
                       tabindex="-1"
                     >
@@ -629,7 +624,7 @@
                     <div
                       x-show="show"
                       x-on:click.outside="show = false"
-                      class="absolute z-10 w-screen max-w-[280px] px-4 mt-3 right-0 sm:px-0 opacity-100 translate-y-0"
+                      class="animate__animated animate__fadeIn animate__faster absolute z-10 w-screen max-w-[280px] px-4 mt-3 right-0 sm:px-0 opacity-100 translate-y-0"
                       id="headlessui-popover-panel-:r12:"
                       tabindex="-1"
                     >
@@ -769,7 +764,7 @@
                       <div
                         x-show="show"
                         x-on:click.outside="show = false"
-                        class="absolute z-10 w-screen max-w-xs sm:max-w-sm px-4 mt-3 -right-28 sm:right-0 sm:px-0 opacity-100 translate-y-0"
+                        class="animate__animated animate__fadeIn animate__faster absolute z-10 w-screen max-w-xs sm:max-w-sm px-4 mt-3 -right-28 sm:right-0 sm:px-0 opacity-100 translate-y-0"
                         id="headlessui-popover-panel-:r15:"
                         tabindex="-1"
                       >
@@ -906,7 +901,7 @@
                     <div
                       x-show="show"
                       x-on:click.outside="show = false"
-                      class="absolute z-10 w-screen max-w-[260px] px-4 mt-3 -right-10 sm:right-0 sm:px-0 opacity-100 translate-y-0"
+                      class="animate__animated animate__fadeIn animate__faster absolute z-10 w-screen max-w-[260px] px-4 mt-3 -right-10 sm:right-0 sm:px-0 opacity-100 translate-y-0"
                       id="headlessui-popover-panel-:r18:"
                       tabindex="-1"
                     >
@@ -1152,6 +1147,7 @@
         </div>
       </div>
     </section>
+    
 
     <!-- 
         ********
